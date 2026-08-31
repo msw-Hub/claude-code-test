@@ -1,0 +1,28 @@
+# 의존성 - 설치로 재생성 가능하므로 제외
+node_modules/
+
+# 빌드 산출물 - 소스에서 생성되므로 제외 (Tailwind 컴파일 결과 등)
+dist/
+build/
+*.min.css
+
+# 환경변수 / 시크릿 - 절대 커밋 금지
+.env
+.env.local
+.env.*.local
+
+# 로그
+npm-debug.log*
+yarn-error.log*
+*.log
+
+# OS 생성 파일
+.DS_Store
+Thumbs.db
+
+# 에디터 설정
+.vscode/
+.idea/
+
+# Claude Code - 개인 로컬 설정만 제외, 공유 설정(settings.json)은 커밋
+.claude/settings.local.json
