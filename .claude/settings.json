@@ -1,6 +1,8 @@
 {
   "permissions": {
-    "allow": ["Bash"]
+    "allow": ["Bash(npm run *)", "Bash(git *)"],
+    "deny": ["Bash(curl:*)", "Bash(rm -rf *)"],
+    "defaultMode": "plan"
   },
   "outputStyle": "Why-Focused Dev"
 }
